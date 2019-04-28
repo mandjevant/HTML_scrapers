@@ -8,3 +8,9 @@ Functions of this scraper include;
 - Wordtype; Returns the wordtype (adjective/noun/pronoun/verb etc.)
 - Origin; Returns the origin of the word
 - Examples; Returns examples of the word being used in a sentence
+
+Prerequisites;
+- requests (pip install requests)
+- bs4 (pip install beautifulsoup4)
+- pprint (pip install pprint)
+
