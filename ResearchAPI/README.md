@@ -1,4 +1,4 @@
-DictionaryAPI scrapes from https://ieeexplore.ieee.org
+ResearchAPI scrapes from https://ieeexplore.ieee.org
 
 Currently you can only use the scraper from editing the sh.py file. This is because the scrapers were originally made for a bigger project.
 If help making different accessing method is desired, I invite you to open an issue.
