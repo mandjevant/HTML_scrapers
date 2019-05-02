@@ -1,6 +1,7 @@
 import os
 import sys
 import requests
+import urllib
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver import DesiredCapabilities
@@ -15,7 +16,7 @@ class ieee:
 		self.word = word
 		self.searches = searches
 		self.searchbase = 'https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText='
-		self.searchurl = self.searchbase + self.word
+		self.searchurl = self.searchbase + urllib.parse.quote(self.word)
 		self.abstractbase = 'https://ieeexplore.ieee.org'
 		self.response = requests.get(self.searchurl)
 
