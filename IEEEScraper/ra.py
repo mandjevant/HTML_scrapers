@@ -32,7 +32,16 @@ class ieee:
 		for f in self.ieeesearch(self.searchurl):
 			articles.append(self.abstractbase + f['href'])
 
+		if len(articles) == 0:
+			print('Unable to find results for', self.word, '. Please try a different search.')
+
+			sys.exit()
+
 		for x in range(self.searches):
+			if articles[x] == None:
+				print('Only ', x-1, ' articles found.')
+				sys.exit()
+
 			NEWURL = articles[x]
 
 			abstract, title = self.ieeeabstract(NEWURL)
