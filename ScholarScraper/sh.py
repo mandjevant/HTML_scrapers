@@ -1,3 +1,6 @@
 from ti import scholar
 
-scholar('alcohol among adolescents').searcher()
+search = input('Enter the search terms')
+
+scholar(str(search)).searcher()
+

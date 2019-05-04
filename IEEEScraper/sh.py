@@ -1,6 +1,7 @@
-import time
 import sys
 from ra import ieee
+
+search = input('Enter the search terms')
 
 
 try:
